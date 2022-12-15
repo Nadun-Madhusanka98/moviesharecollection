@@ -1,0 +1,5 @@
+.primary-box {
+    background-color: var(--primary-color);
+    padding: 0;
+    color: var(--primary-color-text);
+}
