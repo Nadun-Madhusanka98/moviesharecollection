@@ -1,0 +1,16 @@
+#board { 
+    width: 300px; 
+    min-height: 500px; 
+    border: 1px #000 solid; 
+}
+.message { 
+    width: 180px; 
+    margin: 5px; 
+    background-color: #f5ffad; 
+}
+.sent { 
+    margin-left: 115px; background-color: #beff99; 
+}
+body{
+    background-color: rgb(200, 204, 204);
+}

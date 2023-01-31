@@ -1,0 +1,95 @@
+*{
+    overflow: hidden;
+}
+body{
+    background-color: #151320;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins',sans-serif;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.img-container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.img-container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.card-body{
+    padding: 20px 10px;
+}
+.card-body>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.card-body>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+button{
+  justify-content: center;
+  background-color:blue;
+  color:#ffffff;
+}
+
+/* Make the container take up the full width of the screen on small screens */
+@media (max-width: 768px) {
+    .row {
+      width: 100%;
+    }
+  }
+  
+  /* Center the text on small screens */
+  @media (max-width: 768px) {
+    h6 {
+      text-align: center;
+    }
+  }
+  
+  /* Change font size of h6 on small screens */
+  @media (max-width: 768px) {
+    h6 {
+      font-size: 18px;
+    }
+  }
+  
+  /* Make the cards take up the full width of the container on small screens */
+  @media (max-width: 768px) {
+    .cards {
+      width: 100%;
+    }
+  }
+  
+  /* Stack the cards vertically on small screens */
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+  }

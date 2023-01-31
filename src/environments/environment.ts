@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api_key : 'd8b68cbbf8a0253dfbadca9d2a1ea4bc',
+  MONGO_URL : 'MONGO_URL=mongodb+srv://movieshareLibrary:movieshareLibrary123Nadun@clustermoviesharelibrar.kayl27l.mongodb.net/?retryWrites=true&w=majority'
 };
 
 /*

@@ -1,0 +1,52 @@
+<body>
+    <div class="container">
+        <div class="detail_page-infor" *ngFor="let movie of nowplayingmovieDetails?.results; let i = index">
+            <h1 class="text-center">Movie Information</h1>
+            <div class="dp-i-content" *ngIf="i < 20">
+                <div class="dp-i-c-poster">
+                    <div class="film-poster mb-2 text-center">
+                        <img src="{{movie.backdrop_path}}" class="film-poster-img">
+                    </div>
+                </div>
+                <div class="dp-i-c-right" >
+                    <h2 class="heading-name">{{movie.title}}</h2>
+                    <div class="film-stats">
+                        <div class="fs-item">
+                            <span class="quality">
+                                <strong>HD</strong>
+                            </span>
+                        </div>
+                        <div class="fs-item">
+                            <span class="imdb">
+                                <strong>Rating :</strong> {{movie.vote_average}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <div class="block mb-2">
+                            <strong>Overview:</strong>
+                        </div>
+                        {{movie.overview}}
+                    </div>
+                    <div class="elements">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12">
+                                <div class="row-line">
+                                    <span class="type">
+                                        <strong>Released: </strong>
+                                    </span>{{movie.release_date}}
+                                </div>
+                                <div class="row-line">
+                                    <span class="type">
+                                        <strong>Language: </strong>
+                                    </span>{{movie.original_language}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
