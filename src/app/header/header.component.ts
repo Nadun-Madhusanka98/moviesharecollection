@@ -18,8 +18,13 @@ export class HeaderComponent implements OnInit {
   }
 
   search(){
-    this.dataService.setSearchName(this.searchName);
-    this.router.navigateByUrl('/search-movie');
+    if(this.searchName != ""){
+      this.dataService.setSearchName(this.searchName);
+      this.router.navigateByUrl('/search-movie');
+    }else{
+      this.router.navigateByUrl('/Home');
+    }
+    
   }
 
   logout(){
